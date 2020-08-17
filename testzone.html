@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Home</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+          $("#includedHeader").load("header.html");
+          $("#includedNavbar").load("navbar.html");
+          });
+        </script>
+        <link rel="stylesheet" type="text/css" href="https://jmgr99.github.io/binyanim/css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script>
+        // Show an element
+var show = function (elem) {
+	elem.classList.add('is-visible');
+};
+
+// Hide an element
+var hide = function (elem) {
+	elem.classList.remove('is-visible');
+};
+
+// Toggle element visibility
+var toggle = function (elem) {
+	elem.classList.toggle('is-visible');
+};
+
+// Listen for click events
+document.addEventListener('click', function (event) {
+
+	// Make sure clicked element is our toggle
+	if (!event.target.classList.contains('toggle')) return;
+
+	// Prevent default link behavior
+	event.preventDefault();
+
+	// Get the content
+	var content = document.querySelector(event.target.hash);
+	if (!content) return;
+
+	// Toggle the content
+	toggle(content);
+
+}, false);
+        </script>
+     <style>
+     .toggle-content {
+	display: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 350ms ease-in-out;
+}
+
+.toggle-content.is-visible {
+	display: block;
+	max-height: 9999em;
+}
+     </style>
+     </head>
+    <div id="includedHeader"></div>
+<body>
+<img class="image1" src="/images/header.jpg">
+<div id="includedNavbar"></div>
+<div class="container">
+<p>
+  <a class="toggle" href="#example">Toggle Div</a>
+</p>
+
+<div class="toggle-content" id="example">
+  Here's some text we want to toggle visibility of. Let's do it!
+</div>
+</div>
+</body>
+</html>
