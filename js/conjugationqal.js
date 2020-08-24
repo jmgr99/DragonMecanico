@@ -25,7 +25,7 @@ var daguesh = decode_utf8('\xD6\xBC');
 
 var conjdict = {'qal':
 			           {'perfect':
-				             {"Isg":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
+				             {"Isg":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
                       "IIsgm":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,qamets],
                       "IIsgf":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,sheva],
                       "IIIsgm":[rad1,qamets,rad2,pataj,rad3],
