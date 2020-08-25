@@ -81,8 +81,9 @@ var conjdict = {"qal":{'perfect': {"Isg":
 [rad1,"ו",holem,rad2,sheva,rad3,"ו",holem,"ת",],
 },'infinitive': {"Construct":
 [rad2,pataj,rad1,"ֲ",rad2,holem,rad3,],
-},},},
-                
+},},};
+
+
 function conjugate (root, verbform, time, person){var x = conjdict[verbform][time][person].join('');
                                                   return x;}
 
