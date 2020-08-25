@@ -24,67 +24,63 @@ var qubuts = decode_utf8('\xD6\xBB\x20');
 var daguesh = decode_utf8('\xD6\xBC');
 
 var conjdict = {"qal":{'perfect': {"Isg":
-[rad1,qamets,rad2,pataj,rad3,sheva,ת,daguesh,hireq,י,],
+[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
 "Ipl":
-[rad1,qamets,rad2,pataj,rad3,sheva,נ,ו,daguesh,],
+[rad1,qamets,rad2,pataj,rad3,sheva,"נ","ו",daguesh,],
 "IIsgm":
-[rad1,qamets,rad2,pataj,rad3,sheva,ת,daguesh,qamets,],
+[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,qamets,],
 "IIsgf":
-[rad1,qamets,rad2,pataj,rad3,sheva,ת,daguesh,sheva,],
+[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,sheva,],
 "IIplm":
-[rad1,ֲ,rad2,pataj,rad3,sheva,ת,daguesh,segol,ם,],
+[rad1,"ֲ",rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ם",],
 "IIplf":
-[rad1,ֲ,rad2,pataj,rad3,sheva,ת,daguesh,segol,ן,],
+[rad1,"ֲ",rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ן",],
 "IIIsgm":
 [rad1,qamets,rad2,pataj,rad3,],
 "IIIsgf":
-[rad1,qamets,rad2,sheva,rad3,qamets,ה,],
+[rad1,qamets,rad2,sheva,rad3,qamets,"ה",],
 "IIIplm":
-[rad1,qamets,rad2,sheva,rad3,ו,daguesh,],
+[rad1,qamets,rad2,sheva,rad3,"ו",daguesh,],
 "IIIplf":
-[rad1,qamets,rad2,sheva,rad3,ו,daguesh,],
-},
-'imperfect': {"Isg":
-[א,segol,rad1,hatefsegol,rad2,holem,rad3,],
+[rad1,qamets,rad2,sheva,rad3,"ו",daguesh,],
+},'imperfect': {"Isg":
+["א",segol,rad1,hatefsegol,rad2,holem,rad3,],
 "Ipl":
-[נ,pataj,rad1,ֲ,rad2,holem,rad3,],
+["נ",pataj,rad1,"ֲ",rad2,holem,rad3,],
 "IIsgm":
-[ת,daguesh,pataj,rad1,ֲ,rad2,holem,rad3,],
+["ת",daguesh,pataj,rad1,"ֲ",rad2,holem,rad3,],
 "IIsgf":
-[ת,daguesh,pataj,rad1,pataj,rad2,sheva,rad3,hireq,י,],
+["ת",daguesh,pataj,rad1,pataj,rad2,sheva,rad3,hireq,"י",],
 "IIplm":
-[ת,daguesh,pataj,rad1,pataj,rad2,sheva,rad3,ו,daguesh,],
+["ת",daguesh,pataj,rad1,pataj,rad2,sheva,rad3,"ו",daguesh,],
 "IIplf":
-[ת,daguesh,pataj,rad1,ֲ,rad2,holem,rad3,sheva,נ,qamets,ה,],
+["ת",daguesh,pataj,rad1,"ֲ",rad2,holem,rad3,sheva,"נ",qamets,"ה",],
 "IIIsgm":
-[י,pataj,rad1,ֲ,rad2,holem,rad3,],
+["י",pataj,rad1,"ֲ",rad2,holem,rad3,],
 "IIIsgf":
-[ת,daguesh,pataj,rad1,ֲ,rad2,holem,rad3,],
+["ת",daguesh,pataj,rad1,"ֲ",rad2,holem,rad3,],
 "IIIplm":
-[י,pataj,rad1,pataj,rad2,sheva,rad3,ו,daguesh,],
+["י",pataj,rad1,pataj,rad2,sheva,rad3,"ו",daguesh,],
 "IIIplf":
-[ת,daguesh,pataj,rad1,ֲ,rad2,holem,rad3,sheva,נ,qamets,ה,],
-},
-'imperative': {"IIsgm":
-[rad1,ֲ,rad2,holem,rad3,!,‏,],
+["ת",daguesh,pataj,rad1,"ֲ",rad2,holem,rad3,sheva,"נ",qamets,"ה",],
+},'imperative': {"IIsgm":
+[rad1,"ֲ",rad2,holem,rad3,"!","‏",],
 "IIsgf":
-[rad1,hireq,rad2,sheva,rad3,hireq,י,!,‏,],
+[rad1,hireq,rad2,sheva,rad3,hireq,"י","!","‏",],
 "IIplm":
-[rad1,hireq,rad2,sheva,rad3,ו,daguesh,!,‏,],
+[rad1,hireq,rad2,sheva,rad3,"ו",daguesh,"!","‏",],
 "IIplf":
-[rad1,ֲ,rad2,holem,rad3,sheva,נ,qamets,ה,!,‏,],
-},
-'participle': {"mascsg":
-[rad1,ו,holem,rad2,tsere,rad3,],
+[rad1,"ֲ",rad2,holem,rad3,sheva,"נ",qamets,"ה","!","‏",],
+},'participle': {"mascsg":
+[rad1,"ו",holem,rad2,tsere,rad3,],
 "femsg":
-[rad1,ו,holem,rad2,segol,rad3,segol,ת,],
+[rad1,"ו",holem,rad2,segol,rad3,segol,"ת",],
 "mascpl":
-[rad1,ו,holem,rad2,sheva,rad3,hireq,י,ם,],
+[rad1,"ו",holem,rad2,sheva,rad3,hireq,"י","ם",],
 "fempl":
-[rad1,ו,holem,rad2,sheva,rad3,ו,holem,ת,],
-},
-'infinitive': {"Construct":
-[rad2,pataj,rad1,ֲ,rad2,holem,rad3,],
+[rad1,"ו",holem,rad2,sheva,rad3,"ו",holem,"ת",],
+},'infinitive': {"Construct":
+[rad2,pataj,rad1,"ֲ",rad2,holem,rad3,],
 },}
                 
 function conjugate (root, verbform, time, person){var x = conjdict[verbform][time][person].join('');
