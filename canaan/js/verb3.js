@@ -155,13 +155,19 @@ var conjdict = {'qal':
                   "IIIsgf":["ת",daguesh,sheva,rad1,"ֻ",rad2,,daguesh,pataj,rad3],
                   "IIIplm":["י",sheva,rad1,"ֻ",rad2,,daguesh,sheva,rad3,"ו",daguesh],
                   "IIIplf":["ת",daguesh,sheva,rad1,"ֻ",rad2,,daguesh,pataj,rad3,sheva,"נ",qamets,"ה"]},
+              'imperative':
+                  {"IIsgm":'none',
+                    "IIsgf":'none',
+                    "IIplm":'none',
+                    "IIplf":'none',},
               'participle':{
                   "mascsg":["מ",sheva,rad1,"ֻ",rad2,,daguesh,qamets,rad3],
                   "femsg":["מ",sheva,rad1,"ֻ",rad2,,daguesh,segol,rad3,segol,"ת"],
                   "mascpl":["מ",sheva,rad1,"ֻ",rad2,,daguesh,qamets,rad3,hireq,"ים"],
                   "fempl":["מ",sheva,rad1,"ֻ",rad2,,daguesh,qamets,rad3,"ו",holem,"ת"]},
               'infinitive':{
-                  'absolute':[rad1,"ֻ",rad2,,daguesh,holem,rad3]},
+                  'absolute':[rad1,"ֻ",rad2,,daguesh,holem,rad3],
+                  'construct':'none'},
           },
         'hifil':{
           'perfect':
@@ -225,13 +231,19 @@ var conjdict = {'qal':
                 "IIIsgf":["ת",daguesh,"ֻ",rad1,sheva,rad2,pataj,rad3],
                 "IIIplm":["יֻ",rad1,sheva,rad2,sheva,rad3,"ו",daguesh],
                 "IIIplf":["ת",daguesh,"ֻ",rad1,sheva,rad2,pataj,rad3,sheva,"נ",qamets,"ה"]},
+          'imperative':
+              {"IIsgm":'none',
+                "IIsgf":'none',
+                "IIplm":'none',
+                "IIplf":'none',},
         'participle':
                 {"mascsg":["מֻ",rad1,sheva,rad2,qamets,rad3],
                 "femsg":["מֻ",rad1,sheva,rad2,segol,rad3,segol,"ת"],
                 "mascpl":["מֻ",rad1,sheva,rad2,qamets,rad3,hireq,"ים"],
                 "fempl":["מֻ",rad1,sheva,rad2,qamets,rad3,"ו",holem,"ת"]},
         'infinitive':
-                {'absolute':["הֻ",rad1,sheva,rad2,tsere,rad3]},},
+                {'absolute':["הֻ",rad1,sheva,rad2,tsere,rad3],
+                  'construct':'none'},},
     'hitpael':{
         'perfect':{
                 "Isg":["ה",hireq,"ת",sheva,rad1,pataj,rad2,daguesh,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
