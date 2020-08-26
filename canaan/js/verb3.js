@@ -282,8 +282,11 @@ var conjdict = {'qal':
                 'absolute':["ה",hireq,"ת",sheva,rad1,pataj,rad2,daguesh,tsere,rad3],
                 'construct':["ל",sheva,"ה",hireq,"ת",sheva,rad1,pataj,rad2,daguesh,tsere,rad3]},},};
 
-function conjugate (root, verbform, time, person){var x = conjdict[verbform][time][person].join('');
-                                                  return x;}
+function conjugate (root, verbform, time, person){
+                  try {var x = conjdict[verbform][time][person].join('');
+                      return x;}
+                  catch {var x = conjdict[verbform][time][person];
+                      return x}}
 
 window.onload = function() {
 document.getElementById("root").innerHTML = roott;
