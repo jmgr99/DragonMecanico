@@ -350,7 +350,7 @@ var conjdict = {'strongverb':
           'infinitive':
                 {'absolute':'none',
                   "construct":["ל",pataj,rad1,"ֲ",rad2,holem,rad3,],
-                },},},
+                },},
 "nifal":
           {'perfect':
                 {"Isg":
