@@ -24,9 +24,10 @@ var holem = decode_utf8('\xD6\xB9');
 var qubuts = decode_utf8('\xD6\xBB\x20');
 var daguesh = decode_utf8('\xD6\xBC');
 
-var conjdict = {'strongverb':
-                {'qal':
-			           {'perfect':
+var conjdict =
+{'strongverb':
+              {'qal':
+			               {'perfect':
 				             {"Isg":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
                       "IIsgm":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,qamets],
                       "IIsgf":[rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,sheva],
@@ -63,7 +64,7 @@ var conjdict = {'strongverb':
                        'construct':["ל",hireq,rad1,sheva,rad2,holem,rad3]},
                      },
               'nifal':
-                {'perfect':{
+                      {'perfect':{
                     "Isg":["נ",hireq,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
                     "Ipl":["נ",hireq,rad1,sheva,rad2,pataj,rad3,sheva,"נו",daguesh],
                     "IIsgm":["נ",hireq,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,qamets],
@@ -98,7 +99,8 @@ var conjdict = {'strongverb':
                 'infinitive':{
                     'absolute':["ה",hireq,rad1,daguesh,qamets,rad2,holem,rad3],
                     'construct':["ל",sheva,"ה",hireq,rad1,daguesh,qamets,rad2,tsere,rad3]},},
-      'piel':{'perfect':
+              'piel':
+                      {'perfect':
                     {"Isg":[rad1,hireq,rad2,daguesh,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
                     "Ipl":[rad1,hireq,rad2,daguesh,pataj,rad3,sheva,"נו",daguesh],
                     "IIsgm":[rad1,hireq,rad2,daguesh,pataj,rad3,sheva,"ת",daguesh,qamets],
@@ -134,7 +136,8 @@ var conjdict = {'strongverb':
                   {'absolute':[rad1,pataj,rad2,daguesh,holem,rad3],
                     'construct':["ל",sheva,rad1,pataj,rad2,daguesh,tsere,rad3]},
                   },
-      'pual':{'perfect':{
+              'pual':
+                      {'perfect':{
                   "Isg":[rad1,"ֻ",rad2,daguesh,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
                   "Ipl":[rad1,"ֻ",rad2,daguesh,pataj,rad3,sheva,"נו",daguesh],
                   "IIsgm":[rad1,"ֻ",rad2,daguesh,pataj,rad3,sheva,"ת",daguesh,qamets],
@@ -170,7 +173,7 @@ var conjdict = {'strongverb':
                   'absolute':[rad1,"ֻ",rad2,,daguesh,holem,rad3],
                   'construct':'none'},
           },
-        'hifil':{
+              'hifil':{
           'perfect':
                 {"Isg":["ה",hireq,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י"],
                  "Ipl":["ה",hireq,rad1,sheva,rad2,pataj,rad3,sheva,"נו",daguesh],
@@ -283,8 +286,8 @@ var conjdict = {'strongverb':
                 'absolute':["ה",hireq,"ת",sheva,rad1,pataj,rad2,daguesh,tsere,rad3],
                 'construct':["ל",sheva,"ה",hireq,"ת",sheva,rad1,pataj,rad2,daguesh,tsere,rad3]},},},
 'firstgut':
-  {"qal":
-    {'perfect': {"Isg":
+              {"qal":
+                    {'perfect': {"Isg":
                 [rad1,qamets,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
                 "Ipl":
                 [rad1,qamets,rad2,pataj,rad3,sheva,"נ","ו",daguesh,],
@@ -351,8 +354,8 @@ var conjdict = {'strongverb':
                 {'absolute':'none',
                   "construct":["ל",pataj,rad1,"ֲ",rad2,holem,rad3,],
                 },},
-"nifal":
-          {'perfect':
+              "nifal":
+                    {'perfect':
                 {"Isg":
                 ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
                 "Ipl":
@@ -415,8 +418,8 @@ var conjdict = {'strongverb':
     'infinitive':{'absolute':'none',
                   "construct":["ל",sheva,"ה",tsere,rad1,qamets,rad2,tsere,rad3,],
                 },},
-"hifil":
-        {'perfect':
+              "hifil":
+                    {'perfect':
               {"Isg":
               ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
               "Ipl":
@@ -481,7 +484,7 @@ var conjdict = {'strongverb':
       'infinitive':
               {'absolute':'none',
               "construct":["ל",sheva,"ה",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
-              },},};
+            },},},};
 
 function conjugate (type, verbform, time, person){
                   try {var x = conjdict[type][verbform][time][person].join('');}
