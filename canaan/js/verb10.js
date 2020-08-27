@@ -564,6 +564,7 @@ window.onload = function() {
 document.getElementById("root").innerHTML = roott;
 document.getElementById("form").innerHTML = binyan;
 document.getElementById("meaning").innerHTML = meaning;
+document.getElementById("enunciar").innerHTML = conjugate(type,binyan,'perfect','IIIsgm');
 document.getElementById("a4").innerHTML = conjugate(type,binyan,'perfect','IIIsgm');
 document.getElementById("a1").innerHTML = conjugate(type,binyan,'perfect','Isg');
 document.getElementById("a2").innerHTML = conjugate(type,binyan,'perfect','IIsgm');
