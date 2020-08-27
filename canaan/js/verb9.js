@@ -413,7 +413,7 @@ var conjdict = {'strongverb':
                 ["נ",segol,rad1,sheva,rad2,qamets,rad3,"ו",holem,"ת",],
                 },
     'infinitive':{'absolute':'none',
-                  "construct":["ל"sheva,"ה",tsere,rad1,qamets,rad2,tsere,rad3,],
+                  "construct":["ל",sheva,"ה",tsere,rad1,qamets,rad2,tsere,rad3,],
                 },},
 "hifil":
         {'perfect':
