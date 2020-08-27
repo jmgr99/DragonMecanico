@@ -348,10 +348,140 @@ var conjdict = {'strongverb':
                 [rad1,"ו",holem,rad2,sheva,rad3,"ו",holem,"ת",],
                 },
           'infinitive':
-                {'construct':'none',
-                  "Construct":["ל",pataj,rad1,"ֲ",rad2,holem,rad3,],
+                {'absolute':'none',
+                  "construct":["ל",pataj,rad1,"ֲ",rad2,holem,rad3,],
                 },},},
-              };
+"nifal":
+          {'perfect':
+                {"Isg":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
+                "Ipl":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"נ","ו",daguesh,],
+                "IIsgm":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,qamets,],
+                "IIsgf":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,sheva,],
+                "IIplm":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ם",],
+                "IIplf":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ן",],
+                "IIIsgm":
+                ["נ",segol,rad1,sheva,rad2,pataj,rad3,],
+                "IIIsgf":
+                ["נ",segol,rad1,sheva,rad2,sheva,rad3,qamets,"ה",],
+                "IIIplm":
+                ["נ",segol,rad1,sheva,rad2,sheva,rad3,"ו",daguesh,],
+                "IIIplf":
+                ["נ",segol,rad1,sheva,rad2,sheva,rad3,"ו",daguesh,],
+                },
+        'imperfect':
+               {"Isg":
+                ["א",tsere,rad1,qamets,rad2,tsere,rad3,],
+                "Ipl":
+                ["נ",tsere,rad1,qamets,rad2,tsere,rad3,],
+                "IIsgm":
+                ["ת",daguesh,tsere,rad1,qamets,rad2,tsere,rad3,],
+                "IIsgf":
+                ["ת",daguesh,tsere,rad1,qamets,rad2,sheva,rad3,hireq,"י",],
+                "IIplm":
+                ["ת",daguesh,tsere,rad1,qamets,rad2,sheva,rad3,"ו",daguesh,],
+                "IIplf":
+                ["ת",daguesh,tsere,rad1,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],
+                "IIIsgm":
+                ["י",tsere,rad1,qamets,rad2,tsere,rad3,],
+                "IIIsgf":
+                ["ת",daguesh,tsere,rad1,qamets,rad2,tsere,rad3,],
+                "IIIplm":
+                ["י",tsere,rad1,qamets,rad2,sheva,rad3,"ו",daguesh,],
+                "IIIplf":["ת",daguesh,tsere,rad1,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],
+                },
+  'imperative': {"IIsgm":
+                ["ה",tsere,rad1,qamets,rad2,tsere,rad3,"!","‏",],
+                "IIsgf":
+                ["ה",tsere,rad1,qamets,rad2,sheva,rad3,hireq,"י","!","‏",],
+                "IIplm":
+                ["ה",tsere,rad1,qamets,rad2,sheva,rad3,"ו",daguesh,"!","‏",],
+                "IIplf":
+                ["ה",tsere,rad1,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה","!","‏",],
+                },'participle': {"mascsg":
+                ["נ",segol,rad1,sheva,rad2,qamets,rad3,],
+                "femsg":
+                ["נ",segol,rad1,sheva,rad2,segol,rad3,segol,"ת",],
+                "mascpl":
+                ["נ",segol,rad1,sheva,rad2,qamets,rad3,hireq,"י","ם",],
+                "fempl":
+                ["נ",segol,rad1,sheva,rad2,qamets,rad3,"ו",holem,"ת",],
+                },
+    'infinitive':{'absolute':'none',
+                  "construct":["ל"sheva,"ה",tsere,rad1,qamets,rad2,tsere,rad3,],
+                },},
+"hifil":
+        {'perfect':
+              {"Isg":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,hireq,"י",],
+              "Ipl":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"נ","ו",daguesh,],
+              "IIsgm":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,qamets,],
+              "IIsgf":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,sheva,],
+              "IIplm":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ם",],
+              "IIplf":
+              ["ה",segol,rad1,sheva,rad2,pataj,rad3,sheva,"ת",daguesh,segol,"ן",],
+              "IIIsgm":
+              ["ה",segol,rad1,sheva,rad2,hireq,"י",rad3,],
+              "IIIsgf":
+              ["ה",segol,rad1,sheva,rad2,hireq,"י",rad3,qamets,"ה",],
+              "IIIplm":
+              ["ה",segol,rad1,sheva,rad2,hireq,"י",rad3,"ו",daguesh,],
+              "IIIplf":
+              ["ה",segol,rad1,sheva,rad2,hireq,"י",rad3,"ו",daguesh,],
+              },
+      'imperfect':
+              {"Isg":
+              ["א",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "Ipl":
+              ["נ",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "IIsgm":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "IIsgf":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,hireq,"י",rad3,hireq,"י",],
+              "IIplm":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,hireq,"י",rad3,"ו",daguesh,],
+              "IIplf":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],
+              "IIIsgm":
+              ["י",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "IIIsgf":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "IIIplm":
+              ["י",pataj,rad1,sheva,rad2,hireq,"י",rad3,"ו",daguesh,],
+              "IIIplf":
+              ["ת",daguesh,pataj,rad1,sheva,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],
+              },
+      'imperative': {"IIsgm":
+              ["ה",pataj,rad1,sheva,rad2,tsere,rad3,],
+              "IIsgf":
+              ["ה",pataj,rad1,sheva,rad2,hireq,"י",rad3,hireq,"י",],
+              "IIplm":
+              ["ה",pataj,rad1,sheva,rad2,hireq,"י",rad3,"ו",daguesh,],
+              "IIplf":
+              ["ה",pataj,rad1,sheva,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],
+              },
+      'participle': {"mascsg":
+              ["מ",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              "femsg":
+              ["מ",pataj,rad1,sheva,rad2,hireq,"י",rad3,qamets,"ה",],
+              "mascpl":
+              ["מ",pataj,rad1,sheva,rad2,hireq,"י",rad3,hireq,"י","ם",],
+              "fempl":
+              ["מ",pataj,rad1,sheva,rad2,hireq,"י",rad3,"ו",holem,"ת",],
+              },
+      'infinitive':
+              {'absolute':'none',
+              "construct":["ל",sheva,"ה",pataj,rad1,sheva,rad2,hireq,"י",rad3,],
+              },},};
 
 function conjugate (type, verbform, time, person){
                   try {var x = conjdict[type][verbform][time][person].join('');}
