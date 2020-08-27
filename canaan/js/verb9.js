@@ -248,7 +248,7 @@ var conjdict =
                 "fempl":["מֻ",rad1,sheva,rad2,qamets,rad3,"ו",holem,"ת"]},
         'infinitive':
                 {'absolute':["הֻ",rad1,sheva,rad2,tsere,rad3],
-                  'construct':'none'},},
+                  'construct':'none',},},
               'hitpael':
                     {
         'perfect':{
@@ -534,11 +534,11 @@ var conjdict =
                                 {"IIsgm":
                                 ["n","o","n","e",],
                                 "IIsgf":
-                                'none'
+                                'none',
                                 "IIplm":
-                                'none'
+                                'none',
                                 "IIplf":
-                                'none'},
+                                'none',},
                     'participle':
                                 {"mascsg":
                                 ["מ",qamets,rad1,sheva,rad2,qamets,rad3,],
@@ -552,7 +552,7 @@ var conjdict =
                                 {"construct":
                                 ["n","o","n","e",],
                                 "absolute":
-                                'none'},},
+                                'none',},},
                                 },};
 
 function conjugate (type, verbform, time, person){
