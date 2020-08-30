@@ -761,17 +761,13 @@ var conjdict =
                       "IIplf":
                       ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],
                       "IIIsgm":
-                      ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],
-                      "IIIsgf":
                       ["י",hireq,rad1,daguesh,qamets,rad2,tsere,rad3,],
-                      "IIIplm":
+                      "IIIsgf":
                       ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,tsere,rad3,],
-                      "IIIplf":
+                      "IIIplm":
                       ["י",hireq,rad1,daguesh,qamets,rad2,"ֲ",rad3,"ו",daguesh,],
-                      x
-                      ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],
-                      x
-                      ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],},
+                      "IIIplf":
+                      ["ת",daguesh,hireq,rad1,daguesh,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],},
                         'imperative':
                                 {"IIsgm":
                       ["ה",hireq,rad1,daguesh,qamets,rad2,tsere,rad3,],
@@ -780,9 +776,7 @@ var conjdict =
                       "IIplm":
                       ["ה",hireq,rad1,daguesh,qamets,rad2,"ֲ",rad3,"ו",daguesh,],
                       "IIplf":
-                      ["ה",hireq,rad1,daguesh,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],
-                      x
-                      ["ה",hireq,rad1,daguesh,qamets,rad2,tsere,rad3,sheva,"נ",qamets,"ה",],},
+                      ["ה",hireq,rad1,daguesh,qamets,rad2,pataj,rad3,sheva,"נ",qamets,"ה",],},
                         'participle':
                                 {"mascsg":
                       ["נ",hireq,rad1,sheva,rad2,qamets,rad3,],
