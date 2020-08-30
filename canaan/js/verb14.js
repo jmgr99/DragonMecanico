@@ -5,7 +5,7 @@ function decode_utf8(s) {
   return decodeURIComponent(escape(s));
 }
 var type = 'secondgut';
-var rad1 = 'ש';
+var rad1 = 'שׁ';
 var rad2 = 'ח';
 var rad3 = 'ט';
 var binyan = 'pual';
