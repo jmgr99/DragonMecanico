@@ -6,10 +6,10 @@ function decode_utf8(s) {
 }
 var type = 'thirdgut';
 var rad1 = 'ש';
-var rad2 = 'ׁ';
-var rad3 = 'ל';
+var rad2 = 'ל';
+var rad3 = 'ח';
 var binyan = 'nifal';
-var roott = 'שׁלח';
+var roott = 'שלח';
 var meaning = 'to be sent';
 var sheva = decode_utf8('\xD6\xB0');
 var hatefsegol = decode_utf8('\xD6\xB1');
