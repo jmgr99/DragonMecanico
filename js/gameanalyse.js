@@ -1,10 +1,32 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyBsZFq8AkBEAj4D9dUQRmv26de4O2WYUt0",
+  authDomain: "testbase-c6baf.firebaseapp.com",
+  databaseURL: "https://testbase-c6baf.firebaseio.com",
+  projectId: "testbase-c6baf",
+  storageBucket: "testbase-c6baf.appspot.com",
+  messagingSenderId: "986174073958",
+  appId: "1:986174073958:web:2ad398c369d8772dc091a7",
+  measurementId: "G-51XCK3G98W"
+};
 function encode_utf8(s) {
   return unescape(encodeURIComponent(s));
 }
 function decode_utf8(s) {
   return decodeURIComponent(escape(s));
 }
-
+var round = 0
+var corrected = 0
+var resultperson = [];
+var resulttime = [];
+var resultform = [];
+var verbs = [];
+var verbverbform = [];
+var verbtime = [];
+var verbperson = [];
+var correctionform = [];
+var correctiontense = [];
+var correctionperson = [];
+var score = 0
 var rad1 = "ק"
 var rad2 = "ט"
 var rad3 = "ל"
@@ -21,6 +43,7 @@ var qamets = decode_utf8('\xD6\xB8');
 var holem = decode_utf8('\xD6\xB9');
 var qubuts = decode_utf8('\xD6\xBB\x20');
 var daguesh = decode_utf8('\xD6\xBC');
+var wrongsymbol = decode_utf8('\xE2\x9D\x8C')
 
 var conjdict = {'qal':
 			           {'perfect':
@@ -272,6 +295,7 @@ var conjdict = {'qal':
 
 //var person = Object.keys(conjdict[verbform][time]);
 function refresh() {
+  ++round
   var exceptionformarray = [];
   var exceptiontimearray = [];
   var qal = document.getElementById("qal")
@@ -331,8 +355,50 @@ function refresh() {
   catch(err) {
     var a1 = document.getElementById('a1');
     erase(a1);
-    document.getElementById("errormessage").style.display = 'block';
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("savealert").style.display = 'block';
+    // Dummy Array
+var data = verbs;
+var data2 = verbverbform
+var data3 = verbtime
+var data4 = verbperson
+var data5 = correctionform
+var data6 = correctiontense
+var data7 = correctionperson
+
+
+
+// Draw HTML table
+var perrow = 1, // 1 cells per row
+    html = "<thead><th>Verb</th><th>Form</th><th></th><th>Tense</th><th></th><th>Person</th></thead>";
+
+// Loop through array and add table cells
+for (var i=0; i<data.length; i++) {
+
+  html += "<td>" + data[i] + "</td>" + "<td>" + data2[i] + "</td>" + "<td>" + data5[i] + "</td>" + "<td>" + data3[i] + "</td>" + "<td>" + data6[i] + "</td>" + "<td>" + data4[i] + "</td>" + "<td>" + data7[i] + "</td>" ;
+
+  // If you need to click on the cell and do something
+  // html += "<td onclick='FUNCTION()'>" + data[i] + "</td>";
+
+  // Break into next row
+  var next = i+1;
+  if (next%perrow==0 && next!=data.length) {
+    html += "</tr><tr>";
   }
+}
+html += "</tr>";
+
+// Attach HTML to container
+document.getElementById("tabletable").innerHTML = html;
+var table = document.getElementById("tabletable");
+for (var i = 0, row; row = table.rows[i]; i++) {
+   //iterate through rows
+   //rows would be accessed using the "row" variable assigned in the for loop
+
+   }
+    document.getElementById("tabletable").style.display = 'block';
+  };
+
   var aa1 = document.getElementById('aa1');
   var successAlert1 = document.getElementById('successAlert1');
 	var errorAlert1 = document.getElementById('errorAlert1');
@@ -348,6 +414,10 @@ function refresh() {
 	erase(successAlert3);
 	erase(errorAlert3);
 	erase(aa1);
+  verbs.push(a1);
+  verbverbform.push(verbform);
+  verbtime.push(time);
+  verbperson.push(person);
   delete conjdict[verbform][time][person]
 };
 
@@ -377,16 +447,36 @@ function myFunction() {
 		if (inputValtime === answertime){
 			$('#successAlert2').show();
 			$('#errorAlert2').hide();
-			} else {
+      } else {
 		 	$('#successAlert2').hide();
 		 	$('#errorAlert2').show();}
 		if (inputValperson === answerperson){
 			$('#successAlert3').show();
 			$('#errorAlert3').hide();
-			} else {
+      } else {
 			$('#successAlert3').hide();
 			$('#errorAlert3').show();}
-		}
+
+    if (document.getElementById('successAlert1').style.display == 'none'){
+        correctionform.push(wrongsymbol);
+        console.log('pointdown')} else {correctionform.push(decode_utf8('\xE2\x9C\x85'));
+        score++;
+        console.log('pointup')};
+
+    if (document.getElementById('successAlert2').style.display == 'none'){
+        correctiontense.push(wrongsymbol);
+        console.log('pointdown')} else {correctiontense.push(decode_utf8('\xE2\x9C\x85'));
+        score++;
+        console.log('pointup')};
+
+    if (document.getElementById('successAlert3').style.display == 'none'){
+        correctionperson.push(wrongsymbol);
+        console.log('pointdown')} else {correctionperson.push(decode_utf8('\xE2\x9C\x85'));
+        score++;
+        console.log('pointup')};
+
+
+		};
 		var successAlert1 = document.getElementById('successAlert1');
 		var errorAlert1 = document.getElementById('errorAlert1');
 		var successAlert2 = document.getElementById('successAlert2');
@@ -394,6 +484,68 @@ function myFunction() {
 		var successAlert3 = document.getElementById('successAlert3');
 		var errorAlert3 = document.getElementById('errorAlert3');
 
+
+function global(){
+if (round == 0) {refresh()} else {
+console.log(corrected)
+var errorAlert1 = document.getElementById('errorAlert1');
+var successAlert1 = document.getElementById('successAlert1');
+if (corrected == 0){correct();
+return corrected = 1}
+else {refresh()};
+      return corrected = 0}}
+
+
 		window.onload = function() {
       document.getElementById("a1").innerHTML = "Choose your binyanim and click next!"
     };
+
+// Your web app's Firebase configuration
+
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+// Setup access to the database
+let db = firebase.firestore();
+//let score = 0;
+
+function updateScores() {
+    // Clear current scores in our scoreboard
+    document.getElementById('scoreboard').innerHTML = '<tr><th>Name</th><th>Score</th></tr>';
+
+    // Get the top 5 scores from our scoreboard
+    db.collection("scores").orderBy("score", "desc").limit(5).get().then((snapshot) => {
+        snapshot.forEach((doc) => {
+            document.getElementById('scoreboard').innerHTML += '<tr>' +
+            '<td>' + doc.data().name + '</td>' +
+            '<td>' + doc.data().score + '</td>' +
+            '</tr>';
+        })
+    })
+
+}
+
+function saveScore() {
+    // Get name from input box
+    let name = document.getElementById('name').value;
+
+    // Make sure name has a value, if not send alert.
+    if(name !== "") {
+        // Add a new document in collection "scores"
+        db.collection("scores").doc().set({
+            name: name,
+            score: score
+        })
+        .then(function() {
+            console.log("Document successfully written!");
+            updateScores();
+        })
+        .catch(function(error) {
+            console.error("Error writing document: ", error);
+        });
+    } else {
+        alert('Please enter a name');
+    }
+document.getElementById("tabletable").style.display = 'none';
+document.getElementById("scoreboard").style.display = 'block';
+}
