@@ -397,6 +397,7 @@ for (var i = 0, row; row = table.rows[i]; i++) {
 
    }
     document.getElementById("tabletable").style.display = 'block';
+	 $('#tabletable').DataTable( {"scrollX": true} );
   };
 
   var aa1 = document.getElementById('aa1');
