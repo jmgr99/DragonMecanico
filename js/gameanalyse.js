@@ -459,19 +459,19 @@ function myFunction() {
 			$('#errorAlert3').show();}
 
     if (document.getElementById('successAlert1').style.display == 'none'){
-        correctionform.push(wrongsymbol);
+        correctionform.push('x');
         console.log('pointdown')} else {correctionform.push(decode_utf8('\xE2\x9C\x85'));
         score++;
         console.log('pointup')};
 
     if (document.getElementById('successAlert2').style.display == 'none'){
-        correctiontense.push(wrongsymbol);
+        correctiontense.push('x');
         console.log('pointdown')} else {correctiontense.push(decode_utf8('\xE2\x9C\x85'));
         score++;
         console.log('pointup')};
 
     if (document.getElementById('successAlert3').style.display == 'none'){
-        correctionperson.push(wrongsymbol);
+        correctionperson.push('x');
         console.log('pointdown')} else {correctionperson.push(decode_utf8('\xE2\x9C\x85'));
         score++;
         console.log('pointup')};
