@@ -17,8 +17,23 @@
         <script src="https://www.binyan.im/js/gameanalyse.js"></script>
         <link rel="stylesheet" type="text/css" href="https://jmgr99.github.io/binyanim/css/main.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-     </head>
+        <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+        <script src='https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js'></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+        <script>
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "scrollX": true
+    } );
+} );
+        </script>
+        <style>
+        div.dataTables_wrapper {
+        width: 800px;
+        margin: 0 auto;
+        }
+        </style>
+</head>
 <body>
 <img class="image1" src="/images/header.jpg">
 <div class="container">
@@ -87,11 +102,7 @@
 </p>
 </div>
 <p>
-  <div class="row justify-content-center">
-      <div class="col-auto">
-<table class='table table-dark table responsive' style="display:none;" id="tabletable"></table>
-      </div>
-    </div>
+<table id="tabletable" class="display nowrap" style="display:none; width:100%;"></table>
 <div class="d-flex justify-content-center">
 </div>
 <hr>
