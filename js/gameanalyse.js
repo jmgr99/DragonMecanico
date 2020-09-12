@@ -370,12 +370,12 @@ var data7 = correctionperson
 
 // Draw HTML table
 var perrow = 1, // 1 cells per row
-    html = "<thead><tr><th>Verb</th><th>Form</th><th></th><th>Tense</th><th></th><th>Person</th></tr></thead>";
+    html = "<thead><tr><th>Verb</th><th>Form</th><th></th><th>Tense</th><th></th><th>Person</th><th></th></tr></thead><tbody>";
 
 // Loop through array and add table cells
 for (var i=0; i<data.length; i++) {
 
-  html += "<td>" + data[i] + "</td>" + "<td>" + data2[i] + "</td>" + "<td>" + data5[i] + "</td>" + "<td>" + data3[i] + "</td>" + "<td>" + data6[i] + "</td>" + "<td>" + data4[i] + "</td>" + "<td>" + data7[i] + "</td>" ;
+  html += "<tr>" + "<td>" + data[i] + "</td>" + "<td>" + data2[i] + "</td>" + "<td>" + data5[i] + "</td>" + "<td>" + data3[i] + "</td>" + "<td>" + data6[i] + "</td>" + "<td>" + data4[i] + "</td>" + "<td>" + data7[i] + "</td>" + "</tr>";
 
   // If you need to click on the cell and do something
   // html += "<td onclick='FUNCTION()'>" + data[i] + "</td>";
