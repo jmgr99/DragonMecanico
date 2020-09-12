@@ -370,7 +370,7 @@ var data7 = correctionperson
 
 // Draw HTML table
 var perrow = 1, // 1 cells per row
-    html = "<thead><th>Verb</th><th>Form</th><th></th><th>Tense</th><th></th><th>Person</th></thead>";
+    html = "<thead><tr><th>Verb</th><th>Form</th><th></th><th>Tense</th><th></th><th>Person</th></tr></thead>";
 
 // Loop through array and add table cells
 for (var i=0; i<data.length; i++) {
