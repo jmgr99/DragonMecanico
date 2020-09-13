@@ -294,6 +294,10 @@ var conjdict = {'qal':
 //const randomElement = timearray[Math.floor(Math.random() * timearray.length)];
 
 //var person = Object.keys(conjdict[verbform][time]);
+$('#tabletable').DataTable( {
+    retrieve: true,
+} );
+
 function refresh() {
   ++round
   var exceptionformarray = [];
@@ -388,9 +392,10 @@ for (var i=0; i<data.length; i++) {
 }
 html += "</tr>";
                 tableBody = $("tabletable tbody"); 
-                tableBody.append(html); 
+                tableBody.append(html);
+	  	
 // Attach HTML to container
-document.getElementById("tabletable").innerHTML = html;
+//document.getElementById("tabletable").innerHTML = html;
 var table = document.getElementById("tabletable");
 for (var i = 0, row; row = table.rows[i]; i++) {
    //iterate through rows
