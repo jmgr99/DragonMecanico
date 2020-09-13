@@ -396,7 +396,7 @@ for (var i = 0, row; row = table.rows[i]; i++) {
    //rows would be accessed using the "row" variable assigned in the for loop
 
    }
-    document.getElementById("tabletable").style.display = 'block';
+    document.getElementById("hider").style.display = 'block';
 	 $('#tabletable').DataTable( {"scrollX": true} );
   };
 
