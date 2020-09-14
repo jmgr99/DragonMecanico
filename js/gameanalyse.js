@@ -294,9 +294,7 @@ var conjdict = {'qal':
 //const randomElement = timearray[Math.floor(Math.random() * timearray.length)];
 
 //var person = Object.keys(conjdict[verbform][time]);
-$('#tabletable').DataTable( {
-    retrieve: true,
-} );
+
 
 function refresh() {
   ++round
